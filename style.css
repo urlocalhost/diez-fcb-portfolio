@@ -1,0 +1,115 @@
+/*
+Syntax for CSS
+
+Selector {
+	property: value;
+}
+
+
+*/
+/* in CSS we have SPECIFICITY RULE
+Higher Priority
+
+
+
+Least Priority (Universal)
+
+
+*/
+
+/* Universal Selector */
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+/*Elements Selectors*/
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+	border: 5px solid lightblue;
+	border-radius: 50%;
+}
+
+/*ID selector*/
+#landing {
+	/*vh- viewheight determined or measured 
+	percentage of the height of the device you are viewing you webpage*/
+	height: 90vh;
+	/* left to right, flexible layout*/
+	/*flexbox allow us to arrange or layout elements inside our
+	landing section horizontally and vertically
+			by default, display:, flex; arranges elements inside the parent element*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#gallery {
+	height: 100vh;
+	display: flex;
+	/*flex-direction arranges flex items into a column*/
+	flex-direction: column;
+	/*justify content center, arranges elements horizontally if the flex items are in
+	a row however, it arranges elements vertically if the flex items are in a column*/
+	justify-content: center;
+	/*align items, center arranges all flex items to be centered vertically*/
+	align-items: center;
+	border-radius: 6px;
+}
+
+
+ul {
+	list-style: none;
+	/*padding: 25px;
+	padding-bottom: 50px;
+	padding-left: 60px;
+	padding-right: 80px;*/
+	padding: 0;
+}
+
+/*class selector*/
+.tools {
+	/*border lines around the element
+			#f2f2f2 hex code*/
+	border: 5px solid #f2f2f2;
+	height: 200px;
+	/*percentage as measurement for width based on the total width of the parent element*/
+	width: 75%;
+	/*margin space outside the element*/
+	margin: 20px;
+	/*padding space inside the element*/
+	padding: 25px;
+}
+
+h2 {
+	color: #007bff;
+}
+
+/*makes the scrolling of the page smooth*/
+html {
+	scroll-behavior: smooth;
+}
+
+/*
+Bootstrap spaces
+
+m => margin
+p => padding
+
+t => top
+s => for start or left
+e => for end or right
+b => bottom
+
+x => x-axis
+y => y-axis
+
+1-5 or auto
+
+
+mx-auto*/
